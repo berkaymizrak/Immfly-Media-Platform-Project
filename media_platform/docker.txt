@@ -1,0 +1,15 @@
+# app
+DJANGO_SUPERUSER_PASSWORD=123456@@
+DJANGO_SUPER_USERNAME=admin
+DJANGO_SUPER_USER_EMAIL=info@berkaymizrak.com
+SECRET_KEY=django-insecure-2a_g6e3o6b8e2fgqu6*7__t9gi5+xw@n@rzl&x0d_uq&n=h@gl
+DEBUG=on
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+CSRF_TRUSTED_ORIGINS=http://*.localhost,http://*.127.0.0.1,http://*.0.0.0.0
+DATABASE_URL=psql://platform_db_user:JTu3UqHj34L3s@postgres_immfly:5438/media_platform
+
+# postgres
+POSTGRES_USER=platform_db_user
+POSTGRES_PASSWORD=JTu3UqHj34L3s
+POSTGRES_DB=media_platform
+

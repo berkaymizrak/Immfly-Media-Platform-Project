@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  postgres_immfly:
+    container_name: postgres_immfly
+    hostname: postgres_immfly
+    image: postgres:latest
+    env_file:
+      - media_platform/docker.env
+    networks:
+      - main_immfly
+#    restart: unless-stopped
+    ports:
+      - "5438:5432"
+    volumes:
+      - "postgresql-data:/var/lib/postgresql/data"
+    command: -p 5438
+
+  app_immfly:
+    container_name: app_immfly
+    hostname: app_immfly
+    build:
+      context: .
+      args:
+        REPO_PATH: ./
+      dockerfile: Dockerfile
+    env_file:
+      - media_platform/docker.env
+    environment:
+      - "COMMANDS=1"
+    volumes:
+      - static-data:/srv/public
+#      - socket-data:/srv/socket-data
+      - .:/srv/app
+    ports:
+      - "0.0.0.0:8008:8008"
+#    restart: unless-stopped
+    depends_on:
+      - postgres_immfly
+    working_dir: /srv/app
+    networks:
+      - main_immfly
+
+networks:
+  main_immfly:
+
+volumes:
+  postgresql-data:
+  static-data:
