@@ -7,6 +7,8 @@ DEBUG=on
 ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
 CSRF_TRUSTED_ORIGINS=http://*.localhost,http://*.127.0.0.1,http://*.0.0.0.0
 DATABASE_URL=psql://platform_db_user:JTu3UqHj34L3s@postgres_immfly:5438/media_platform
+PAGE_SIZE=50
+MAX_PAGE_SIZE=100
 
 # postgres
 POSTGRES_USER=platform_db_user
