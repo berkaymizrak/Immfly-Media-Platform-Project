@@ -18,4 +18,13 @@
        DJANGO_SUPER_USERNAME
        DJANGO_SUPER_USER_EMAIL
 
+## About
+
+- Non of services are using default ports to not have conflict if you have running another services on those ports.
+
+   > Database (Postgres): 5438
+
+   > Backend (Django): 8008
+
+   So requests must be sent to: http://localhost:8008/
 
