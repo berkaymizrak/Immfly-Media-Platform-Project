@@ -32,6 +32,9 @@ class DocumentAdmin(ImportExportModelAdmin):
         'document',
         'doc_type',
     ]
+    search_fields = (
+        'document',
+    )
     list_filter = [
         'doc_type',
     ]

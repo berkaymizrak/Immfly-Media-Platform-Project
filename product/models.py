@@ -82,7 +82,7 @@ class Channel(AbstractModel):
     )
     group = models.ManyToManyField(
         Groups,
-        verbose_name=_("Genre"),
+        verbose_name=_("Group"),
         blank=True,
     )
     picture = models.ImageField(

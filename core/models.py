@@ -40,7 +40,7 @@ class Person(AbstractModel):
 
     class Meta(AbstractModel.Meta):
         verbose_name = _("Person")
-        verbose_name_plural = _("Persons")
+        verbose_name_plural = _("People")
 
     def __str__(self):
         return '%s' % self.get_full_name()
@@ -90,4 +90,4 @@ class Language(AbstractModel):
         verbose_name_plural = _("Languages")
 
     def __str__(self):
-        return '%s' % self.code
+        return '%s (%s)' % (self.name, self.code)
