@@ -1,4 +1,4 @@
-from core.serializers import LanguageDetailedSerializer
+from core.serializers import LanguageDetailedSerializer, PersonDetailedSerializer, DocumentDetailedSerializer
 from rest_framework import serializers
 from product import models
 
@@ -48,8 +48,28 @@ class ContentSerializer(serializers.ModelSerializer):
         )
 
 
+class ContentPersonDetailedSerializer(serializers.ModelSerializer):
+    person = PersonDetailedSerializer()
+
+    class Meta:
+        model = models.Content.person.through
+        fields = (
+            'id',
+            'content',
+            'person',
+            'relation_type',
+        )
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['relation_type'] = instance.relation_type and instance.get_relation_type_display()
+        return representation
+
+
 class ContentDetailedSerializer(ContentSerializer):
-    pass
+    person = ContentPersonDetailedSerializer(source='contentpersonrelation_set', many=True, )
+    genre = GenreDetailedSerializer(many=True)
+    file = DocumentDetailedSerializer(many=True)
 
 
 class ChannelSerializer(serializers.ModelSerializer):
