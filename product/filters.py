@@ -63,6 +63,7 @@ class ChannelFilter(filters.FilterSet):
     search = filters.CharFilter(
         lookup_expr='icontains',
         method='filter_search',
+        label=_('Search in Code and Name'),
     )
 
     class Meta:
