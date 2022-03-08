@@ -31,3 +31,17 @@ class GenreFilter(filters.FilterSet):
             "name_autocomplete",
             "age_rate",
         )
+
+
+class ChannelFilter(filters.FilterSet):
+    title_autocomplete = filters.CharFilter(
+        field_name="title",
+        lookup_expr="icontains",
+    )
+
+    class Meta:
+        model = models.Channel
+        fields = (
+            "title",
+            "title_autocomplete",
+        )

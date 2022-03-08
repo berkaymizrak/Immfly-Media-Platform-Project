@@ -59,6 +59,11 @@ class Channel(AbstractModel):
     """
 
     """
+    code = models.CharField(
+        max_length=100,
+        unique=True,
+        verbose_name=_("Channel Code"),
+    )
     title = models.CharField(
         verbose_name=_("Title"),
         max_length=255,
@@ -83,11 +88,6 @@ class Channel(AbstractModel):
     picture = models.ImageField(
         upload_to='media/channels',
         verbose_name=_("Picture"),
-    )
-    code = models.CharField(
-        max_length=100,
-        unique=True,
-        verbose_name=_("Channel Code"),
     )
 
     class Meta(AbstractModel.Meta):

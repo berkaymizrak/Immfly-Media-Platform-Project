@@ -5,6 +5,7 @@ from product import views
 router = DefaultRouter()
 router.register(r"groups", views.GroupsViewSet)
 router.register(r"genres", views.GenreViewSet)
+router.register(r"channels", views.ChannelViewSet)
 
 urlpatterns = [
 ]

@@ -28,3 +28,22 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class GenreDetailedSerializer(GenreSerializer):
     pass
+
+
+class ChannelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Channel
+        fields = (
+            "id",
+            "code",
+            "title",
+            "parent",
+            "language",
+            "group",
+            "picture",
+        )
+
+
+class ChannelDetailedSerializer(ChannelSerializer):
+    group = GroupsDetailedSerializer(many=True)
+    # language = LanguageDetailedSerializer()  # Not implemented yet

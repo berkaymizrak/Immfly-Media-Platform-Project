@@ -25,3 +25,14 @@ class GenreViewSet(DetailedListViewSetMixin):
     }
     filterset_class = filters.GenreFilter
     ordering_fields = ()
+
+
+class ChannelViewSet(DetailedListViewSetMixin):
+    queryset = models.Channel.objects.all()
+    serializer_class = serializers.ChannelSerializer
+    serializer_action_classes = {
+        "detailed": serializers.ChannelDetailedSerializer,
+        "detailed_list": serializers.ChannelDetailedSerializer,
+    }
+    filterset_class = filters.ChannelFilter
+    ordering_fields = ()
