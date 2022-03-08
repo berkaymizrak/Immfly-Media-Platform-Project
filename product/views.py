@@ -14,3 +14,14 @@ class GroupsViewSet(DetailedListViewSetMixin):
     }
     filterset_class = filters.GroupsFilter
     ordering_fields = ()
+
+
+class GenreViewSet(DetailedListViewSetMixin):
+    queryset = models.Genre.objects.all()
+    serializer_class = serializers.GenreSerializer
+    serializer_action_classes = {
+        "detailed": serializers.GenreDetailedSerializer,
+        "detailed_list": serializers.GenreDetailedSerializer,
+    }
+    filterset_class = filters.GenreFilter
+    ordering_fields = ()

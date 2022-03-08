@@ -1,4 +1,3 @@
-from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 from product import models
 
@@ -13,11 +12,19 @@ class GroupsSerializer(serializers.ModelSerializer):
         )
 
 
-class GroupsDetailedSerializer(serializers.ModelSerializer):
+class GroupsDetailedSerializer(GroupsSerializer):
+    pass
+
+
+class GenreSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Groups
+        model = models.Genre
         fields = (
             "id",
             "name",
-            "code",
+            "age_rate",
         )
+
+
+class GenreDetailedSerializer(GenreSerializer):
+    pass

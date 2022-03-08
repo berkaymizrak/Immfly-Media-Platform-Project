@@ -16,3 +16,18 @@ class GroupsFilter(filters.FilterSet):
             "name_autocomplete",
             "code",
         )
+
+
+class GenreFilter(filters.FilterSet):
+    name_autocomplete = filters.CharFilter(
+        field_name="name",
+        lookup_expr="icontains",
+    )
+
+    class Meta:
+        model = models.Genre
+        fields = (
+            "name",
+            "name_autocomplete",
+            "age_rate",
+        )
