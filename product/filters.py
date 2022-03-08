@@ -45,3 +45,17 @@ class ChannelFilter(filters.FilterSet):
             "title",
             "title_autocomplete",
         )
+
+
+class ContentFilter(filters.FilterSet):
+    name_autocomplete = filters.CharFilter(
+        field_name="name",
+        lookup_expr="icontains",
+    )
+
+    class Meta:
+        model = models.Content
+        fields = (
+            "name",
+            "name_autocomplete",
+        )

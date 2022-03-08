@@ -36,3 +36,14 @@ class ChannelViewSet(DetailedListViewSetMixin):
     }
     filterset_class = filters.ChannelFilter
     ordering_fields = ()
+
+
+class ContentViewSet(DetailedListViewSetMixin):
+    queryset = models.Content.objects.all()
+    serializer_class = serializers.ContentSerializer
+    serializer_action_classes = {
+        "detailed": serializers.ContentDetailedSerializer,
+        "detailed_list": serializers.ContentDetailedSerializer,
+    }
+    filterset_class = filters.ContentFilter
+    ordering_fields = ()

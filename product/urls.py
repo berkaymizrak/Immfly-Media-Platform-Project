@@ -6,6 +6,7 @@ router = DefaultRouter()
 router.register(r"groups", views.GroupsViewSet)
 router.register(r"genres", views.GenreViewSet)
 router.register(r"channels", views.ChannelViewSet)
+router.register(r"content", views.ContentViewSet)
 
 urlpatterns = [
 ]

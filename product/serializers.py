@@ -48,3 +48,24 @@ class ChannelSerializer(serializers.ModelSerializer):
 class ChannelDetailedSerializer(ChannelSerializer):
     group = GroupsDetailedSerializer(many=True)
     language = LanguageDetailedSerializer()
+
+
+class ContentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Content
+        fields = (
+            "id",
+            "name",
+            "description",
+            "season",
+            "episode",
+            "rating",
+            "channel",
+            "genre",
+            "file",
+            "person",
+        )
+
+
+class ContentDetailedSerializer(ContentSerializer):
+    pass
