@@ -129,9 +129,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    "PAGE_SIZE": env("PAGE_SIZE", int),
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
+    'PAGE_SIZE': env('PAGE_SIZE', int),
+    'DEFAULT_PAGINATION_CLASS': 'core.pagination.PageNumberPaginationWithPageSize',
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
     ],
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
