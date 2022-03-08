@@ -4,56 +4,56 @@ from product import models
 
 class GroupsFilter(filters.FilterSet):
     name_autocomplete = filters.CharFilter(
-        field_name="name",
-        lookup_expr="icontains",
+        field_name='name',
+        lookup_expr='icontains',
     )
 
     class Meta:
         model = models.Groups
         fields = (
-            "name",
-            "name_autocomplete",
-            "code",
+            'name',
+            'name_autocomplete',
+            'code',
         )
 
 
 class GenreFilter(filters.FilterSet):
     name_autocomplete = filters.CharFilter(
-        field_name="name",
-        lookup_expr="icontains",
+        field_name='name',
+        lookup_expr='icontains',
     )
 
     class Meta:
         model = models.Genre
         fields = (
-            "name",
-            "name_autocomplete",
-            "age_rate",
+            'name',
+            'name_autocomplete',
+            'age_rate',
         )
 
 
 class ChannelFilter(filters.FilterSet):
     title_autocomplete = filters.CharFilter(
-        field_name="title",
-        lookup_expr="icontains",
+        field_name='title',
+        lookup_expr='icontains',
     )
     group_name = filters.CharFilter(
-        field_name="group__name",
+        field_name='group__name',
     )
     group_name_autocomplete = filters.CharFilter(
-        field_name="group__name",
-        lookup_expr="icontains",
+        field_name='group__name',
+        lookup_expr='icontains',
     )
     group_code = filters.CharFilter(
-        field_name="group__code",
+        field_name='group__code',
     )
     group_code_autocomplete = filters.CharFilter(
-        field_name="group__code",
-        lookup_expr="icontains",
+        field_name='group__code',
+        lookup_expr='icontains',
     )
     search = filters.CharFilter(
-        lookup_expr="icontains",
-        method="filter_search",
+        lookup_expr='icontains',
+        method='filter_search',
     )
 
     class Meta:
@@ -77,13 +77,13 @@ class ChannelFilter(filters.FilterSet):
 
 class ContentFilter(filters.FilterSet):
     name_autocomplete = filters.CharFilter(
-        field_name="name",
-        lookup_expr="icontains",
+        field_name='name',
+        lookup_expr='icontains',
     )
 
     class Meta:
         model = models.Content
         fields = (
-            "name",
-            "name_autocomplete",
+            'name',
+            'name_autocomplete',
         )
