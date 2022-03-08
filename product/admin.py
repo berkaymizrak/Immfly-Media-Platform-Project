@@ -2,12 +2,12 @@ from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from product import models
 
+
 # Register your models here.
 
 
 @admin.register(models.Groups)
 class GroupsAdmin(ImportExportModelAdmin):
-
     list_display = [
         'name',
         'code',
@@ -20,7 +20,6 @@ class GroupsAdmin(ImportExportModelAdmin):
 
 @admin.register(models.Genre)
 class GenreAdmin(ImportExportModelAdmin):
-
     list_display = [
         'name',
         'age_rate',
@@ -32,7 +31,6 @@ class GenreAdmin(ImportExportModelAdmin):
 
 @admin.register(models.Channel)
 class ChannelAdmin(ImportExportModelAdmin):
-
     list_display = [
         'title',
         'parent',
@@ -49,7 +47,6 @@ class ChannelAdmin(ImportExportModelAdmin):
 
 @admin.register(models.Content)
 class ContentAdmin(ImportExportModelAdmin):
-
     list_display = [
         'name',
         'description',
@@ -65,4 +62,3 @@ class ContentAdmin(ImportExportModelAdmin):
     list_filter = [
         'genre',
     ]
-

@@ -4,7 +4,6 @@ from product import models
 
 
 class GroupsSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = models.Groups
         fields = (
@@ -15,7 +14,6 @@ class GroupsSerializer(serializers.ModelSerializer):
 
 
 class GroupsDetailedSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = models.Groups
         fields = (
@@ -23,4 +21,3 @@ class GroupsDetailedSerializer(serializers.ModelSerializer):
             "name",
             "code",
         )
-

@@ -16,4 +16,3 @@ class GroupsFilter(filters.FilterSet):
             "name_autocomplete",
             "code",
         )
-

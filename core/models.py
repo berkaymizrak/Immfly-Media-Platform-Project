@@ -14,7 +14,7 @@ class AbstractModel(models.Model):
 
     class Meta:
         abstract = True
-        ordering = ('-created_at', )
+        ordering = ('-created_at',)
 
 
 class Person(AbstractModel):
@@ -91,5 +91,3 @@ class Language(AbstractModel):
 
     def __str__(self):
         return '%s' % self.code
-
-

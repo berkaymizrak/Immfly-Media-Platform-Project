@@ -5,6 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+
 # Create your models here.
 
 
@@ -98,7 +99,13 @@ class Channel(AbstractModel):
 
     def get_author_list(self):
         content_ids = self.content_set.values_list('id', flat=True)
-        return ContentPersonRelation.objects.filter(content_id__in=content_ids, relation_type=enums.ContentPersonRelationTypes.AUTHOR).values_list('person__first_name', flat=True)
+        return ContentPersonRelation.objects.filter(
+            content_id__in=content_ids,
+            relation_type=enums.ContentPersonRelationTypes.AUTHOR,
+        ).values_list(
+            'person__first_name',
+            flat=True,
+        )
 
     def get_rating(self):
         return self.content_set.values_list('rating', flat=True)

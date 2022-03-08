@@ -2,12 +2,12 @@ from core import models
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 
+
 # Register your models here.
 
 
 @admin.register(models.Person)
 class PersonAdmin(ImportExportModelAdmin):
-
     list_display = [
         'id',
         'first_name',
@@ -27,7 +27,6 @@ class PersonAdmin(ImportExportModelAdmin):
 
 @admin.register(models.Document)
 class DocumentAdmin(ImportExportModelAdmin):
-
     list_display = [
         'id',
         'document',
@@ -43,7 +42,6 @@ class DocumentAdmin(ImportExportModelAdmin):
 
 @admin.register(models.Language)
 class LanguageAdmin(ImportExportModelAdmin):
-
     list_display = [
         'name',
         'code',
@@ -52,5 +50,3 @@ class LanguageAdmin(ImportExportModelAdmin):
         'name',
         'code',
     ]
-
-

@@ -7,4 +7,3 @@ class DocumentTypes(models.TextChoices):
     PDF = "pdf", _("PDF")
     TEXT = "text", _("Text")
     PHOTO = "photo", _("Photo")
-

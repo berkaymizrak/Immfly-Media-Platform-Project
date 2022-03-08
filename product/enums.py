@@ -6,4 +6,3 @@ class ContentPersonRelationTypes(models.TextChoices):
     AUTHOR = "author", _("Author")
     DIRECTOR = "director", _("Director")
     CAST = "cast", _("Cast")
-
