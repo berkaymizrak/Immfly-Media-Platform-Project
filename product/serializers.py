@@ -1,3 +1,4 @@
+from core.serializers import LanguageDetailedSerializer
 from rest_framework import serializers
 from product import models
 
@@ -46,4 +47,4 @@ class ChannelSerializer(serializers.ModelSerializer):
 
 class ChannelDetailedSerializer(ChannelSerializer):
     group = GroupsDetailedSerializer(many=True)
-    # language = LanguageDetailedSerializer()  # Not implemented yet
+    language = LanguageDetailedSerializer()
