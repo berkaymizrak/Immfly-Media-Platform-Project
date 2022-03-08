@@ -108,7 +108,11 @@ class Channel(AbstractModel):
         )
 
     def get_rating(self):
-        return self.content_set.values_list('rating', flat=True)
+        if self.content_set.exists():
+            rating_list = self.content_set.values_list('rating', flat=True)
+            return sum(rating_list) / len(rating_list)
+        else:
+            return None
 
 
 class Content(AbstractModel):
@@ -173,7 +177,13 @@ class Content(AbstractModel):
         return '%s' % self.name
 
     def get_age_rate(self):
-        print(self.genre.through.all())
+        return self.genre.through.objects.filter(
+            content=self
+        ).prefetch_related(
+            'genre'
+        ).aggregate(
+            models.Max('genre__age_rate')
+        ).get('genre__age_rate__max', 0)
 
 
 class ContentPersonRelation(AbstractModel):

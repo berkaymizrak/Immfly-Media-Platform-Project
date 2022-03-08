@@ -45,6 +45,7 @@ class ContentSerializer(serializers.ModelSerializer):
             'genre',
             'file',
             'person',
+            'get_age_rate',
         )
 
 
@@ -85,8 +86,10 @@ class ChannelSerializer(serializers.ModelSerializer):
             'language',
             'group',
             'picture',
+            'get_author_list',
             'content_set',
             'deepest_channel',
+            'get_rating',
         )
 
     def get_deepest_channel(self, obj):
