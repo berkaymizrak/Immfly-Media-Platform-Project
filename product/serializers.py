@@ -48,6 +48,7 @@ class ChannelSerializer(serializers.ModelSerializer):
 class ChannelDetailedSerializer(ChannelSerializer):
     group = GroupsDetailedSerializer(many=True)
     language = LanguageDetailedSerializer()
+    parent = ChannelSerializer()
 
 
 class ContentSerializer(serializers.ModelSerializer):
