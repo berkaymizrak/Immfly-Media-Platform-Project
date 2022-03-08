@@ -3,9 +3,9 @@ from rest_framework.routers import DefaultRouter
 from core import views
 
 router = DefaultRouter()
-router.register(r"person", views.PersonViewSet)
-router.register(r"document", views.DocumentViewSet)
-router.register(r"language", views.LanguageViewSet)
+router.register(r'person', views.PersonViewSet)
+router.register(r'document', views.DocumentViewSet)
+router.register(r'language', views.LanguageViewSet)
 
 urlpatterns = [
 ]

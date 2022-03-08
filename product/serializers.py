@@ -7,9 +7,9 @@ class GroupsSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Groups
         fields = (
-            "id",
-            "name",
-            "code",
+            'id',
+            'name',
+            'code',
         )
 
 
@@ -21,13 +21,34 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Genre
         fields = (
-            "id",
-            "name",
-            "age_rate",
+            'id',
+            'name',
+            'age_rate',
         )
 
 
 class GenreDetailedSerializer(GenreSerializer):
+    pass
+
+
+class ContentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Content
+        fields = (
+            'id',
+            'name',
+            'description',
+            'season',
+            'episode',
+            'rating',
+            'channel',
+            'genre',
+            'file',
+            'person',
+        )
+
+
+class ContentDetailedSerializer(ContentSerializer):
     pass
 
 

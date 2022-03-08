@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 class DetailedListViewSetMixin(viewsets.ModelViewSet):
     serializer_action_classes = {}
-    ordering = ("id",)
+    ordering = ('id',)
 
     def get_serializer_class(self):
         """
@@ -36,7 +36,7 @@ class DetailedListViewSetMixin(viewsets.ModelViewSet):
         queryset = self.filter_queryset(self.get_queryset())
 
         page = self.paginate_queryset(queryset)
-        kwargs.update({"many": True, "context": {"request": self.request}})
+        kwargs.update({'many': True, 'context': {'request': self.request}})
         if page is not None:
             serializer = self.get_serializer_class()(page, **kwargs)
             return self.get_paginated_response(serializer.data)
@@ -47,7 +47,7 @@ class DetailedListViewSetMixin(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def detailed(self, request, *args, **kwargs):
         instance = self.get_object()
-        kwargs.pop("pk")
-        kwargs.update({"context": {"request": self.request}})
+        kwargs.pop('pk')
+        kwargs.update({'context': {'request': self.request}})
         serializer = self.get_serializer_class()(instance, **kwargs)
         return Response(serializer.data)

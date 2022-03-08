@@ -20,28 +20,28 @@ affected_models = [
 
 
 class Command(BaseCommand):
-    help = "Generates test data"
+    help = 'Generates test data'
 
     @transaction.atomic
     def handle(self, *args, **kwargs):
         self.stdout.write(self.style.MIGRATE_HEADING(
-            "\nThis command will clear all models' data and create the test data."
-            "\nThe models that is going to be affected:"
+            '\nThis command will clear all models\' data and create the test data.'
+            '\nThe models that is going to be affected:'
         ))
         for model in affected_models:
             self.stdout.write(self.style.SUCCESS(model.__name__))
         self.stdout.write(self.style.WARNING(
-            "This action can not be undo.\n"
+            'This action can not be undo.\n'
         ))
-        r = input("Would you like to continue? (y/N): ")
-        if r not in ("y", "Y"):
-            raise CommandError("Command exited.")
+        r = input('Would you like to continue? (y/N): ')
+        if r not in ('y', 'Y'):
+            raise CommandError('Command exited.')
 
         for model in affected_models:
-            self.stdout.write(self.style.HTTP_SERVER_ERROR("\nDeleting old data: %s" % model.__name__))
+            self.stdout.write(self.style.HTTP_SERVER_ERROR('\nDeleting old data: %s' % model.__name__))
             model.objects.all().delete()
 
-        self.stdout.write(self.style.SUCCESS("\nDeleting completed. Creating new data..."))
+        self.stdout.write(self.style.SUCCESS('\nDeleting completed. Creating new data...'))
 
         self.safe_run_factory(factories.PersonFactory)
         self.safe_run_factory(factories.DocumentFactory)
@@ -55,7 +55,7 @@ class Command(BaseCommand):
         self.safe_run_factory(factories.ContentPersonRelationFactory)
         self.safe_run_factory(factories.ContentFileRelationFactory)
 
-        self.stdout.write(self.style.SUCCESS("\nAll processes successfully finished."))
+        self.stdout.write(self.style.SUCCESS('\nAll processes successfully finished.'))
 
     def safe_run_factory(self, factory, times=50):
         for i in range(times):

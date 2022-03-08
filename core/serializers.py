@@ -6,10 +6,10 @@ class PersonSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Person
         fields = (
-            "id",
-            "first_name",
-            "last_name",
-            "date_of_birth",
+            'id',
+            'first_name',
+            'last_name',
+            'date_of_birth',
         )
 
 
@@ -21,9 +21,9 @@ class DocumentSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Document
         fields = (
-            "id",
-            "document",
-            "doc_type",
+            'id',
+            'document',
+            'doc_type',
         )
 
 
@@ -38,9 +38,9 @@ class LanguageSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Language
         fields = (
-            "id",
-            "name",
-            "code",
+            'id',
+            'name',
+            'code',
         )
 
 
