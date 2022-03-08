@@ -17,13 +17,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from media_platform.router import router
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from rest_framework.routers import DefaultRouter
-
-router = DefaultRouter()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,6 +32,7 @@ urlpatterns = [
     path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
 
     path('', include("core.urls")),
+    path('', include("product.urls")),
 ]
 
 if settings.DEBUG:
