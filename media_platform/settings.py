@@ -138,7 +138,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
     ],
     "DEFAULT_FILTER_BACKENDS": [
-        "core.filters.CustomFilterBackend",
+        "core.backend.filters.CustomFilterBackend",
         "rest_framework.filters.OrderingFilter",
     ],
 }
