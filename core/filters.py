@@ -20,3 +20,17 @@ class PersonFilter(filters.FilterSet):
             "last_name",
             "last_name_autocomplete",
         )
+
+
+class DocumentFilter(filters.FilterSet):
+    doc_type_autocomplete = filters.CharFilter(
+        field_name="doc_type",
+        lookup_expr="icontains",
+    )
+
+    class Meta:
+        model = models.Document
+        fields = (
+            "doc_type",
+            "doc_type_autocomplete",
+        )

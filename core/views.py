@@ -14,3 +14,14 @@ class PersonViewSet(DetailedListViewSetMixin):
     }
     filterset_class = filters.PersonFilter
     ordering_fields = ()
+
+
+class DocumentViewSet(DetailedListViewSetMixin):
+    queryset = models.Document.objects.all()
+    serializer_class = serializers.DocumentSerializer
+    serializer_action_classes = {
+        "detailed": serializers.DocumentDetailedSerializer,
+        "detailed_list": serializers.DocumentDetailedSerializer,
+    }
+    filterset_class = filters.DocumentFilter
+    ordering_fields = ()
