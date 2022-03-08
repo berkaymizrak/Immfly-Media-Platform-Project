@@ -18,6 +18,11 @@
        DJANGO_SUPER_USERNAME
        DJANGO_SUPER_USER_EMAIL
 
+5. **Import Languages**
+
+       docker-compose exec app_immfly python manage.py loaddata languages.json
+
+
 ## About
 
 - Non of services are using default ports to not have conflict if you have running another services on those ports.
@@ -27,4 +32,25 @@
    > Backend (Django): 8008
 
    So requests must be sent to: http://localhost:8008/
+
+
+## Continuous Development
+
+docker-compose.yml file has the volume as:
+
+        volumes:
+              - static-data:/srv/public
+        #      - socket-data:/srv/socket-data
+              - .:/srv/app
+
+We use current folder as working directory in container instead socket-data. 
+This makes Django reloading function to be run itself when we are developing.
+
+On continuous development some commands:
+
+        docker-compose exec app_immfly python manage.py makemigrations
+        docker-compose exec app_immfly python manage.py migrate
+        docker-compose exec app_immfly python manage.py createsuperuser
+
+However, *entrypoint.sh* will make migrate and createsuperuser steps by itself so no need to run those.
 

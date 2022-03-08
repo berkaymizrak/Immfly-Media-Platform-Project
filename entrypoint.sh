@@ -7,5 +7,5 @@ fi
 python manage.py runserver 0.0.0.0:8008
 
 # To make migrations in continuous development, RUN:
-# docker-compose exec app python manage.py makemigrations
-# docker-compose exec app python manage.py migrate
+# docker-compose exec app_immfly python manage.py makemigrations
+# docker-compose exec app_immfly python manage.py migrate

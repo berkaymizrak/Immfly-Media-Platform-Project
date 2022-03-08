@@ -1,0 +1,1842 @@
+[
+    {
+        "model": "core.language",
+        "pk": 1,
+        "fields": {
+            "code": "ab",
+            "name": "Abkhaz",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 2,
+        "fields": {
+            "code": "aa",
+            "name": "Afar",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 3,
+        "fields": {
+            "code": "af",
+            "name": "Afrikaans",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 4,
+        "fields": {
+            "code": "ak",
+            "name": "Akan",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 5,
+        "fields": {
+            "code": "sq",
+            "name": "Albanian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 6,
+        "fields": {
+            "code": "am",
+            "name": "Amharic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 7,
+        "fields": {
+            "code": "ar",
+            "name": "Arabic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 8,
+        "fields": {
+            "code": "an",
+            "name": "Aragonese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 9,
+        "fields": {
+            "code": "hy",
+            "name": "Armenian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 10,
+        "fields": {
+            "code": "as",
+            "name": "Assamese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 11,
+        "fields": {
+            "code": "av",
+            "name": "Avaric",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 12,
+        "fields": {
+            "code": "ae",
+            "name": "Avestan",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 13,
+        "fields": {
+            "code": "ay",
+            "name": "Aymara",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 14,
+        "fields": {
+            "code": "az",
+            "name": "Azerbaijani",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 15,
+        "fields": {
+            "code": "bm",
+            "name": "Bambara",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 16,
+        "fields": {
+            "code": "ba",
+            "name": "Bashkir",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 17,
+        "fields": {
+            "code": "eu",
+            "name": "Basque",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 18,
+        "fields": {
+            "code": "be",
+            "name": "Belarusian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 19,
+        "fields": {
+            "code": "bn",
+            "name": "Bengali; Bangla",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 20,
+        "fields": {
+            "code": "bh",
+            "name": "Bihari",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 21,
+        "fields": {
+            "code": "bi",
+            "name": "Bislama",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 22,
+        "fields": {
+            "code": "bs",
+            "name": "Bosnian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 23,
+        "fields": {
+            "code": "br",
+            "name": "Breton",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 24,
+        "fields": {
+            "code": "bg",
+            "name": "Bulgarian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 25,
+        "fields": {
+            "code": "my",
+            "name": "Burmese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 26,
+        "fields": {
+            "code": "ca",
+            "name": "Catalan; Valencian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 27,
+        "fields": {
+            "code": "ch",
+            "name": "Chamorro",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 28,
+        "fields": {
+            "code": "ce",
+            "name": "Chechen",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 29,
+        "fields": {
+            "code": "ny",
+            "name": "Chichewa; Chewa; Nyanja",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 30,
+        "fields": {
+            "code": "zh",
+            "name": "Chinese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 31,
+        "fields": {
+            "code": "cv",
+            "name": "Chuvash",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 32,
+        "fields": {
+            "code": "kw",
+            "name": "Cornish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 33,
+        "fields": {
+            "code": "co",
+            "name": "Corsican",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 34,
+        "fields": {
+            "code": "cr",
+            "name": "Cree",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 35,
+        "fields": {
+            "code": "hr",
+            "name": "Croatian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 36,
+        "fields": {
+            "code": "cs",
+            "name": "Czech",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 37,
+        "fields": {
+            "code": "da",
+            "name": "Danish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 38,
+        "fields": {
+            "code": "dv",
+            "name": "Divehi; Dhivehi; Maldivian;",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 39,
+        "fields": {
+            "code": "nl",
+            "name": "Dutch",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 40,
+        "fields": {
+            "code": "dz",
+            "name": "Dzongkha",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 41,
+        "fields": {
+            "code": "en",
+            "name": "English",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 42,
+        "fields": {
+            "code": "eo",
+            "name": "Esperanto",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 43,
+        "fields": {
+            "code": "et",
+            "name": "Estonian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 44,
+        "fields": {
+            "code": "ee",
+            "name": "Ewe",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 45,
+        "fields": {
+            "code": "fo",
+            "name": "Faroese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 46,
+        "fields": {
+            "code": "fj",
+            "name": "Fijian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 47,
+        "fields": {
+            "code": "fi",
+            "name": "Finnish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 48,
+        "fields": {
+            "code": "fr",
+            "name": "French",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 49,
+        "fields": {
+            "code": "ff",
+            "name": "Fula; Fulah; Pulaar; Pular",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 50,
+        "fields": {
+            "code": "gl",
+            "name": "Galician",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 51,
+        "fields": {
+            "code": "ka",
+            "name": "Georgian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 52,
+        "fields": {
+            "code": "de",
+            "name": "German",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 53,
+        "fields": {
+            "code": "el",
+            "name": "Greek, Modern",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 54,
+        "fields": {
+            "code": "gn",
+            "name": "Guaraní­",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 55,
+        "fields": {
+            "code": "gu",
+            "name": "Gujarati",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 56,
+        "fields": {
+            "code": "ht",
+            "name": "Haitian; Haitian Creole",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 57,
+        "fields": {
+            "code": "ha",
+            "name": "Hausa",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 58,
+        "fields": {
+            "code": "he",
+            "name": "Hebrew (modern)",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 59,
+        "fields": {
+            "code": "hz",
+            "name": "Herero",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 60,
+        "fields": {
+            "code": "hi",
+            "name": "Hindi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 61,
+        "fields": {
+            "code": "ho",
+            "name": "Hiri Motu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 62,
+        "fields": {
+            "code": "hu",
+            "name": "Hungarian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 63,
+        "fields": {
+            "code": "ia",
+            "name": "Interlingua",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 64,
+        "fields": {
+            "code": "id",
+            "name": "Indonesian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 65,
+        "fields": {
+            "code": "ie",
+            "name": "Interlingue",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 66,
+        "fields": {
+            "code": "ga",
+            "name": "Irish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 67,
+        "fields": {
+            "code": "ig",
+            "name": "Igbo",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 68,
+        "fields": {
+            "code": "ik",
+            "name": "Inupiaq",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 69,
+        "fields": {
+            "code": "io",
+            "name": "Ido",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 70,
+        "fields": {
+            "code": "is",
+            "name": "Icelandic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 71,
+        "fields": {
+            "code": "it",
+            "name": "Italian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 72,
+        "fields": {
+            "code": "iu",
+            "name": "Inuktitut",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 73,
+        "fields": {
+            "code": "ja",
+            "name": "Japanese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 74,
+        "fields": {
+            "code": "jv",
+            "name": "Javanese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 75,
+        "fields": {
+            "code": "kl",
+            "name": "Kalaallisut, Greenlandic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 76,
+        "fields": {
+            "code": "kn",
+            "name": "Kannada",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 77,
+        "fields": {
+            "code": "kr",
+            "name": "Kanuri",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 78,
+        "fields": {
+            "code": "ks",
+            "name": "Kashmiri",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 79,
+        "fields": {
+            "code": "kk",
+            "name": "Kazakh",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 80,
+        "fields": {
+            "code": "km",
+            "name": "Khmer",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 81,
+        "fields": {
+            "code": "ki",
+            "name": "Kikuyu, Gikuyu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 82,
+        "fields": {
+            "code": "rw",
+            "name": "Kinyarwanda",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 83,
+        "fields": {
+            "code": "ky",
+            "name": "Kyrgyz",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 84,
+        "fields": {
+            "code": "kv",
+            "name": "Komi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 85,
+        "fields": {
+            "code": "kg",
+            "name": "Kongo",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 86,
+        "fields": {
+            "code": "ko",
+            "name": "Korean",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 87,
+        "fields": {
+            "code": "ku",
+            "name": "Kurdish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 88,
+        "fields": {
+            "code": "kj",
+            "name": "Kwanyama, Kuanyama",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 89,
+        "fields": {
+            "code": "la",
+            "name": "Latin",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 90,
+        "fields": {
+            "code": "lb",
+            "name": "Luxembourgish, Letzeburgesch",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 91,
+        "fields": {
+            "code": "lg",
+            "name": "Ganda",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 92,
+        "fields": {
+            "code": "li",
+            "name": "Limburgish, Limburgan, Limburger",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 93,
+        "fields": {
+            "code": "ln",
+            "name": "Lingala",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 94,
+        "fields": {
+            "code": "lo",
+            "name": "Lao",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 95,
+        "fields": {
+            "code": "lt",
+            "name": "Lithuanian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 96,
+        "fields": {
+            "code": "lu",
+            "name": "Luba-Katanga",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 97,
+        "fields": {
+            "code": "lv",
+            "name": "Latvian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 98,
+        "fields": {
+            "code": "gv",
+            "name": "Manx",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 99,
+        "fields": {
+            "code": "mk",
+            "name": "Macedonian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 100,
+        "fields": {
+            "code": "mg",
+            "name": "Malagasy",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 101,
+        "fields": {
+            "code": "ms",
+            "name": "Malay",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 102,
+        "fields": {
+            "code": "ml",
+            "name": "Malayalam",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 103,
+        "fields": {
+            "code": "mt",
+            "name": "Maltese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 104,
+        "fields": {
+            "code": "mi",
+            "name": "MÄori",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 105,
+        "fields": {
+            "code": "mr",
+            "name": "Marathi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 106,
+        "fields": {
+            "code": "mh",
+            "name": "Marshallese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 107,
+        "fields": {
+            "code": "mn",
+            "name": "Mongolian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 108,
+        "fields": {
+            "code": "na",
+            "name": "Nauru",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 109,
+        "fields": {
+            "code": "nv",
+            "name": "Navajo, Navaho",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 110,
+        "fields": {
+            "code": "nb",
+            "name": "Norwegian BokmÃ¥l",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 111,
+        "fields": {
+            "code": "nd",
+            "name": "North Ndebele",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 112,
+        "fields": {
+            "code": "ne",
+            "name": "Nepali",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 113,
+        "fields": {
+            "code": "ng",
+            "name": "Ndonga",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 114,
+        "fields": {
+            "code": "nn",
+            "name": "Norwegian Nynorsk",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 115,
+        "fields": {
+            "code": "no",
+            "name": "Norwegian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 116,
+        "fields": {
+            "code": "ii",
+            "name": "Nuosu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 117,
+        "fields": {
+            "code": "nr",
+            "name": "South Ndebele",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 118,
+        "fields": {
+            "code": "oc",
+            "name": "Occitan",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 119,
+        "fields": {
+            "code": "oj",
+            "name": "Ojibwe, Ojibwa",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 120,
+        "fields": {
+            "code": "cu",
+            "name": "Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 121,
+        "fields": {
+            "code": "om",
+            "name": "Oromo",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 122,
+        "fields": {
+            "code": "or",
+            "name": "Oriya",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 123,
+        "fields": {
+            "code": "os",
+            "name": "Ossetian, Ossetic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 124,
+        "fields": {
+            "code": "pa",
+            "name": "Panjabi, Punjabi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 125,
+        "fields": {
+            "code": "pi",
+            "name": "Pali",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 126,
+        "fields": {
+            "code": "fa",
+            "name": "Persian (Farsi)",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 127,
+        "fields": {
+            "code": "pl",
+            "name": "Polish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 128,
+        "fields": {
+            "code": "ps",
+            "name": "Pashto, Pushto",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 129,
+        "fields": {
+            "code": "pt",
+            "name": "Portuguese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 130,
+        "fields": {
+            "code": "qu",
+            "name": "Quechua",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 131,
+        "fields": {
+            "code": "rm",
+            "name": "Romansh",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 132,
+        "fields": {
+            "code": "rn",
+            "name": "Kirundi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 133,
+        "fields": {
+            "code": "ro",
+            "name": "Romanian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 134,
+        "fields": {
+            "code": "ru",
+            "name": "Russian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 135,
+        "fields": {
+            "code": "sa",
+            "name": "Sanskrit",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 136,
+        "fields": {
+            "code": "sc",
+            "name": "Sardinian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 137,
+        "fields": {
+            "code": "sd",
+            "name": "Sindhi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 138,
+        "fields": {
+            "code": "se",
+            "name": "Northern Sami",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 139,
+        "fields": {
+            "code": "sm",
+            "name": "Samoan",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 140,
+        "fields": {
+            "code": "sg",
+            "name": "Sango",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 141,
+        "fields": {
+            "code": "sr",
+            "name": "Serbian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 142,
+        "fields": {
+            "code": "gd",
+            "name": "Scottish Gaelic; Gaelic",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 143,
+        "fields": {
+            "code": "sn",
+            "name": "Shona",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 144,
+        "fields": {
+            "code": "si",
+            "name": "Sinhala, Sinhalese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 145,
+        "fields": {
+            "code": "sk",
+            "name": "Slovak",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 146,
+        "fields": {
+            "code": "sl",
+            "name": "Slovene",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 147,
+        "fields": {
+            "code": "so",
+            "name": "Somali",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 148,
+        "fields": {
+            "code": "st",
+            "name": "Southern Sotho",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 150,
+        "fields": {
+            "code": "es",
+            "name": "Spanish; Castilian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 151,
+        "fields": {
+            "code": "su",
+            "name": "Sundanese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 152,
+        "fields": {
+            "code": "sw",
+            "name": "Swahili",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 153,
+        "fields": {
+            "code": "ss",
+            "name": "Swati",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 154,
+        "fields": {
+            "code": "sv",
+            "name": "Swedish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 155,
+        "fields": {
+            "code": "ta",
+            "name": "Tamil",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 156,
+        "fields": {
+            "code": "te",
+            "name": "Telugu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 157,
+        "fields": {
+            "code": "tg",
+            "name": "Tajik",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 158,
+        "fields": {
+            "code": "th",
+            "name": "Thai",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 159,
+        "fields": {
+            "code": "ti",
+            "name": "Tigrinya",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 160,
+        "fields": {
+            "code": "bo",
+            "name": "Tibetan Standard, Tibetan, Central",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 161,
+        "fields": {
+            "code": "tk",
+            "name": "Turkmen",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 162,
+        "fields": {
+            "code": "tl",
+            "name": "Tagalog",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 163,
+        "fields": {
+            "code": "tn",
+            "name": "Tswana",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 164,
+        "fields": {
+            "code": "to",
+            "name": "Tonga (Tonga Islands)",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 165,
+        "fields": {
+            "code": "tr",
+            "name": "Turkish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 166,
+        "fields": {
+            "code": "ts",
+            "name": "Tsonga",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 167,
+        "fields": {
+            "code": "tt",
+            "name": "Tatar",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 168,
+        "fields": {
+            "code": "tw",
+            "name": "Twi",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 169,
+        "fields": {
+            "code": "ty",
+            "name": "Tahitian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 170,
+        "fields": {
+            "code": "ug",
+            "name": "Uyghur, Uighur",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 171,
+        "fields": {
+            "code": "uk",
+            "name": "Ukrainian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 172,
+        "fields": {
+            "code": "ur",
+            "name": "Urdu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 173,
+        "fields": {
+            "code": "uz",
+            "name": "Uzbek",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 174,
+        "fields": {
+            "code": "ve",
+            "name": "Venda",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 175,
+        "fields": {
+            "code": "vi",
+            "name": "Vietnamese",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 176,
+        "fields": {
+            "code": "vo",
+            "name": "Volapuk",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 177,
+        "fields": {
+            "code": "wa",
+            "name": "Walloon",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 178,
+        "fields": {
+            "code": "cy",
+            "name": "Welsh",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 179,
+        "fields": {
+            "code": "wo",
+            "name": "Wolof",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 180,
+        "fields": {
+            "code": "fy",
+            "name": "Western Frisian",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 181,
+        "fields": {
+            "code": "xh",
+            "name": "Xhosa",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 182,
+        "fields": {
+            "code": "yi",
+            "name": "Yiddish",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 183,
+        "fields": {
+            "code": "yo",
+            "name": "Yoruba",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 184,
+        "fields": {
+            "code": "za",
+            "name": "Zhuang, Chuang",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    },
+    {
+        "model": "core.language",
+        "pk": 185,
+        "fields": {
+            "code": "zu",
+            "name": "Zulu",
+            "created_at": "2022-01-01T10:00:00.000Z",
+            "updated_at": "2022-01-01T10:00:00.000Z"
+        }
+    }
+]
