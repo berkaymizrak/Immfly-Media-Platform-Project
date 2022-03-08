@@ -5,6 +5,7 @@ from core import views
 router = DefaultRouter()
 router.register(r"person", views.PersonViewSet)
 router.register(r"document", views.DocumentViewSet)
+router.register(r"language", views.LanguageViewSet)
 
 urlpatterns = [
 ]

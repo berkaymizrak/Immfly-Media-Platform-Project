@@ -34,3 +34,18 @@ class DocumentFilter(filters.FilterSet):
             "doc_type",
             "doc_type_autocomplete",
         )
+
+
+class LanguageFilter(filters.FilterSet):
+    name_autocomplete = filters.CharFilter(
+        field_name="name",
+        lookup_expr="icontains",
+    )
+
+    class Meta:
+        model = models.Language
+        fields = (
+            "name",
+            "name_autocomplete",
+            "code",
+        )

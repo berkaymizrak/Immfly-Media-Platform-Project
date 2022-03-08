@@ -25,3 +25,14 @@ class DocumentViewSet(DetailedListViewSetMixin):
     }
     filterset_class = filters.DocumentFilter
     ordering_fields = ()
+
+
+class LanguageViewSet(DetailedListViewSetMixin):
+    queryset = models.Language.objects.all()
+    serializer_class = serializers.LanguageSerializer
+    serializer_action_classes = {
+        "detailed": serializers.LanguageDetailedSerializer,
+        "detailed_list": serializers.LanguageDetailedSerializer,
+    }
+    filterset_class = filters.LanguageFilter
+    ordering_fields = ()
