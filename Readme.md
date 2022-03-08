@@ -22,6 +22,10 @@
 
        docker-compose exec app_immfly python manage.py loaddata languages.json
 
+6. **Create Dummy Data**
+
+       docker-compose exec app_immfly python manage.py setup_test_data
+
 ## About
 
 - Non of services are using default ports to not have conflict if you have running another services on those ports.

@@ -8,6 +8,9 @@ django-import-export==2.7.1
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.1.0
 et-xmlfile==1.1.0
+factory-boy==3.2.1
+Faker==13.3.1
+faker-enum==0.0.2
 importlib-metadata==4.11.2
 Markdown==3.3.6
 MarkupPy==1.14
@@ -16,8 +19,10 @@ openpyxl==3.0.9
 Pillow==9.0.1
 psycopg2-binary==2.9.3
 PyJWT==2.3.0
+python-dateutil==2.8.2
 pytz==2021.3
 PyYAML==6.0
+six==1.16.0
 sqlparse==0.4.2
 tablib==3.2.0
 xlrd==2.0.1

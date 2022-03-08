@@ -18,7 +18,7 @@ class Groups(AbstractModel):
         max_length=255,
         help_text='',
     )
-    code = models.CharField(
+    code = models.SlugField(
         max_length=100,
         unique=True,
         verbose_name=_("Group Code"),
@@ -59,7 +59,7 @@ class Channel(AbstractModel):
     """
 
     """
-    code = models.CharField(
+    code = models.SlugField(
         max_length=100,
         unique=True,
         verbose_name=_("Channel Code"),
@@ -126,10 +126,14 @@ class Content(AbstractModel):
         null=True,
     )
     season = models.PositiveIntegerField(
+        default=1,
         verbose_name=_("Season"),
+        validators=[MinValueValidator(Decimal('0')), ],
     )
     episode = models.PositiveIntegerField(
+        default=1,
         verbose_name=_("Episode"),
+        validators=[MinValueValidator(Decimal('0')), ],
     )
     rating = models.DecimalField(
         default=Decimal('0'),
