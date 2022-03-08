@@ -32,41 +32,28 @@ class GenreDetailedSerializer(GenreSerializer):
 
 
 class ChannelSerializer(serializers.ModelSerializer):
+    deepest_channel = serializers.SerializerMethodField()
+
     class Meta:
         model = models.Channel
         fields = (
-            "id",
-            "code",
-            "title",
-            "parent",
-            "language",
-            "group",
-            "picture",
+            'id',
+            'code',
+            'title',
+            'parent',
+            'language',
+            'group',
+            'picture',
+            'content_set',
+            'deepest_channel',
         )
+
+    def get_deepest_channel(self, obj):
+        return not obj.channel_set.all().exists()
 
 
 class ChannelDetailedSerializer(ChannelSerializer):
     group = GroupsDetailedSerializer(many=True)
     language = LanguageDetailedSerializer()
     parent = ChannelSerializer()
-
-
-class ContentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.Content
-        fields = (
-            "id",
-            "name",
-            "description",
-            "season",
-            "episode",
-            "rating",
-            "channel",
-            "genre",
-            "file",
-            "person",
-        )
-
-
-class ContentDetailedSerializer(ContentSerializer):
-    pass
+    content_set = ContentDetailedSerializer(many=True)

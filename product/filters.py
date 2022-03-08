@@ -90,7 +90,11 @@ class ChannelFilter(filters.FilterSet):
     def filter_having_parent(self, queryset, name, value):
         if value.lower() in ['none', '0', ]:
             value = None
-        return queryset.filter(parent=value)
+        qs = queryset.filter(parent=value)
+        if qs.exists():
+            return qs
+        else:
+            return queryset.filter(id=value)
 
 
 class ContentFilter(filters.FilterSet):
