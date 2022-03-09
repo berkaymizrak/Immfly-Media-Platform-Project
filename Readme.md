@@ -36,6 +36,20 @@
 
   So requests must be sent to: http://localhost:8008/
 
+- Contents have *get_age_rate* which presents the maximum appropriate age to reach the content based on genre.
+
+- *get_rating* shows the average rating of contents of channels.
+
+- If you send request with a channel id in *having_parent* parameter to *channels*, it checks the child of sent channel.
+
+    - If any child is exists, channel list comes and **deepest_channel** field comes as False.
+
+    - If there is no child, having_parent id comes as channel, *content_set* will be reachable and **deepest_channel**
+      field comes as True.
+
+- Contents can have many people as director, cast or author. Like *get_author_list* field, we can receive list of any
+  type of people of content.
+
 ## Continuous Development
 
 docker-compose.yml file has the volume as:

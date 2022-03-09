@@ -10,9 +10,6 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Groups(AbstractModel):
-    """
-
-    """
     name = models.CharField(
         verbose_name=_('Name'),
         max_length=255,
@@ -33,9 +30,6 @@ class Groups(AbstractModel):
 
 
 class Genre(AbstractModel):
-    """
-
-    """
     name = models.CharField(
         verbose_name=_('Name'),
         max_length=255,
@@ -56,9 +50,6 @@ class Genre(AbstractModel):
 
 
 class Channel(AbstractModel):
-    """
-
-    """
     code = models.SlugField(
         max_length=100,
         unique=True,
@@ -97,6 +88,12 @@ class Channel(AbstractModel):
     def __str__(self):
         return '%s' % self.title
 
+    def deepest_channel(self):
+        return not self.channel_set.exists()
+
+    def children(self):
+        return self.channel_set.all().values_list('id', flat=True)
+
     def get_author_list(self):
         content_ids = self.content_set.values_list('id', flat=True)
         return ContentPersonRelation.objects.filter(
@@ -108,17 +105,23 @@ class Channel(AbstractModel):
         )
 
     def get_rating(self):
-        if self.content_set.exists():
+        rating = None
+        if self.deepest_channel():
             rating_list = self.content_set.values_list('rating', flat=True)
-            return sum(rating_list) / len(rating_list)
-        else:
-            return None
+            if rating_list:
+                return sum(rating_list) / len(rating_list)
+
+        elif self.channel_set.exists():
+            for elem in self.channel_set.all():
+                if rating:
+                    rating = (elem.get_rating() + rating) / 2
+                else:
+                    rating = elem.get_rating()
+
+        return rating
 
 
 class Content(AbstractModel):
-    """
-
-    """
     name = models.CharField(
         verbose_name=_('Name'),
         max_length=255,
@@ -187,6 +190,9 @@ class Content(AbstractModel):
 
 
 class ContentPersonRelation(AbstractModel):
+    """
+    A person can be either author, director or cast in the content.
+    """
     content = models.ForeignKey(
         Content,
         on_delete=models.CASCADE,

@@ -74,26 +74,22 @@ class ContentDetailedSerializer(ContentSerializer):
 
 
 class ChannelSerializer(serializers.ModelSerializer):
-    deepest_channel = serializers.SerializerMethodField()
-
     class Meta:
         model = models.Channel
         fields = (
             'id',
             'code',
             'title',
-            'parent',
             'language',
             'group',
             'picture',
             'get_author_list',
             'content_set',
+            'parent',
+            'children',
             'deepest_channel',
             'get_rating',
         )
-
-    def get_deepest_channel(self, obj):
-        return not obj.channel_set.all().exists()
 
 
 class ChannelDetailedSerializer(ChannelSerializer):

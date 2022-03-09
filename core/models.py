@@ -18,9 +18,6 @@ class AbstractModel(models.Model):
 
 
 class Person(AbstractModel):
-    """
-
-    """
     first_name = models.CharField(
         verbose_name=_('First Name'),
         max_length=255,
