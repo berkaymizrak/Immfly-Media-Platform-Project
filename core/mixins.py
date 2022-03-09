@@ -59,15 +59,19 @@ class DetailedListViewSetMixin(viewsets.ModelViewSet):
 class ExportViewSetMixin(viewsets.ModelViewSet):
     @action(detail=False, methods=["get"])
     def export(self, request, *args, **kwargs):
+        excel_type = request.GET.get('excel_type', 'csv')
         qs = self.filter_queryset(self.get_queryset())
         serializer_class = self.get_serializer_class()
         service = services.ExcelExportService(
             queryset=qs, serializer_class=serializer_class,
         )
-        wb = service.create_workbook()
-        filename = service.generate_file_name()
-        response = HttpResponse(
-            save_virtual_workbook(wb), content_type="application/vnd.ms-excel"
-        )
-        response["Content-Disposition"] = f'attachment; filename="{filename}"'
+        if excel_type == 'xlsx':
+            wb = service.create_workbook()
+            filename = service.generate_file_name('xlsx')
+            response = HttpResponse(
+                save_virtual_workbook(wb), content_type="application/vnd.ms-excel"
+            )
+            response["Content-Disposition"] = f'attachment; filename="{filename}"'
+        else:  # csv
+            response = service.create_csv(True)
         return response

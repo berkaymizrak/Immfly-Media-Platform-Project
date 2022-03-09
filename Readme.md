@@ -52,15 +52,27 @@
 
 ## Exporting Channel Info
 
-There are 2 ways to export channel info. (Channel title and average rating) 
+There are 2 types of files and 2 ways to export channel info. (Channel title and average rating) 
 
-1. First is using serializer action:
+### 1. CSV
 
-        http://localhost:8008/api/channels/export/
+1. Using serializer action:
 
-2. Second is using management command:
+        http://localhost:8008/api/channels/export/?excel_type=csv
 
-        docker-compose exec app_immfly python manage.py export_channels
+2. Using management command:
+
+        docker-compose exec app_immfly python manage.py export_channels_csv
+
+### 2. XLSX
+
+1. Using serializer action:
+
+        http://localhost:8008/api/channels/export/?excel_type=xlsx
+
+2. Using management command:
+
+        docker-compose exec app_immfly python manage.py export_channels_xlsx
 
 ## Continuous Development
 

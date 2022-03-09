@@ -1,10 +1,9 @@
 from core import services
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
-from django.http import Http404, HttpResponse
 from product.models import Channel
 from product.serializers import ChannelExportSerializer
-from openpyxl.writer.excel import save_virtual_workbook, save_workbook
+from openpyxl.writer.excel import save_workbook
 
 
 class Command(BaseCommand):
@@ -25,9 +24,9 @@ class Command(BaseCommand):
             queryset=qs, serializer_class=serializer_class,
         )
         wb = service.create_workbook()
-        filename = service.generate_file_name()
-        save_workbook(wb, 'media/'+filename)
+        filename = service.generate_file_name('xlsx')
+        save_workbook(wb, 'media/' + filename)
 
-        self.stdout.write(self.style.SUCCESS('\nAll processes successfully finished and the exported file saved into \'media\' folder.'))
-        # return response
-
+        self.stdout.write(self.style.SUCCESS(
+            '\nAll processes successfully finished and the exported file saved into \'media\' folder.'
+        ))

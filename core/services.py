@@ -1,4 +1,6 @@
+import csv
 from django.utils import timezone
+from django.http import HttpResponse
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 
@@ -32,7 +34,29 @@ class ExcelExportService:
             ws.append(row)
         return wb
 
-    def generate_file_name(self):
+    def create_csv(self, render=True):
+        data, headers, header_mappings, length = self.prepare_content_data()
+
+        if render:
+            response = HttpResponse('text/csv')
+            response['Content-Disposition'] = 'attachment; filename=%s' % self.generate_file_name('csv')
+            writer = csv.writer(response)
+
+            writer.writerow([str(header_mappings.get(h)[0]) for h in headers])
+            for r in data:
+                r['get_rating'] = r['get_rating'] and float(r['get_rating'])
+                writer.writerow(list(r.values()))
+        else:
+            with open('media/%s' % self.generate_file_name('csv'), 'w') as f:
+                writer = csv.writer(f)
+                writer.writerow([str(header_mappings.get(h)[0]) for h in headers])
+                for r in data:
+                    r['get_rating'] = r['get_rating'] and float(r['get_rating'])
+                    writer.writerow(list(r.values()))
+            f.close()
+        return f
+
+    def generate_file_name(self, extension):
         timestamp = timezone.localtime(timezone.now()).strftime("%Y%m%d_%H%M%S%f")
-        return f"{timestamp}_export.xlsx"
+        return f"{timestamp}_export.%s" % extension
 
