@@ -1,11 +1,9 @@
-import random
-
 from core import factories
-from core.models import Person, Document, Language
+from core.models import *
 from django.core.management import call_command
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction, IntegrityError
-from product.models import Groups, Genre, Channel, Content, ContentPersonRelation
+from product.models import *
 
 affected_models = [
     Person,

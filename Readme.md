@@ -50,6 +50,18 @@
 - Contents can have many people as director, cast or author. Like *get_author_list* field, we can receive list of any
   type of people of content.
 
+## Exporting Channel Info
+
+There are 2 ways to export channel info. (Channel title and average rating) 
+
+1. First is using serializer action:
+
+        http://localhost:8008/api/channels/export/
+
+2. Second is using management command:
+
+        docker-compose exec app_immfly python manage.py export_channels
+
 ## Continuous Development
 
 docker-compose.yml file has the volume as:
