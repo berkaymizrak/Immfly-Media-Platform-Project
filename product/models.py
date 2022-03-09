@@ -114,7 +114,8 @@ class Channel(AbstractModel):
         elif self.channel_set.exists():
             for elem in self.channel_set.all():
                 if rating:
-                    rating = (elem.get_rating() + rating) / 2
+                    if elem.get_rating():
+                        rating = (elem.get_rating() + rating) / 2
                 else:
                     rating = elem.get_rating()
 
