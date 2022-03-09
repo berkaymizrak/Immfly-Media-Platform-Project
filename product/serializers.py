@@ -1,4 +1,5 @@
 from core.serializers import LanguageDetailedSerializer, PersonDetailedSerializer, DocumentDetailedSerializer
+from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
 from product import models
 
@@ -97,3 +98,16 @@ class ChannelDetailedSerializer(ChannelSerializer):
     language = LanguageDetailedSerializer()
     parent = ChannelSerializer()
     content_set = ContentDetailedSerializer(many=True)
+
+
+class ChannelExportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Channel
+        fields = (
+            'title',
+            'get_rating',
+        )
+        field_mappings = {
+            'title': (_('Title'), 0),
+            'get_rating': (_('Average Rating'), 1),
+        }

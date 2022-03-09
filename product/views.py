@@ -1,4 +1,4 @@
-from core.mixins import DetailedListViewSetMixin
+from core.mixins import DetailedListViewSetMixin, ExportViewSetMixin
 from product import serializers, filters, models
 
 
@@ -27,12 +27,13 @@ class GenreViewSet(DetailedListViewSetMixin):
     ordering_fields = ()
 
 
-class ChannelViewSet(DetailedListViewSetMixin):
+class ChannelViewSet(DetailedListViewSetMixin, ExportViewSetMixin):
     queryset = models.Channel.objects.all()
     serializer_class = serializers.ChannelSerializer
     serializer_action_classes = {
         'detailed': serializers.ChannelDetailedSerializer,
         'detailed_list': serializers.ChannelDetailedSerializer,
+        'export': serializers.ChannelExportSerializer,
     }
     filterset_class = filters.ChannelFilter
     ordering_fields = ()

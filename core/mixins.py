@@ -1,3 +1,6 @@
+from core import services
+from django.http import Http404, HttpResponse
+from openpyxl.writer.excel import save_virtual_workbook
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -51,3 +54,20 @@ class DetailedListViewSetMixin(viewsets.ModelViewSet):
         kwargs.update({'context': {'request': self.request}})
         serializer = self.get_serializer_class()(instance, **kwargs)
         return Response(serializer.data)
+
+
+class ExportViewSetMixin(viewsets.ModelViewSet):
+    @action(detail=False, methods=["get"])
+    def export(self, request, *args, **kwargs):
+        qs = self.filter_queryset(self.get_queryset())
+        serializer_class = self.get_serializer_class()
+        service = services.ExcelExportService(
+            queryset=qs, serializer_class=serializer_class,
+        )
+        wb = service.create_workbook()
+        filename = service.generate_file_name()
+        response = HttpResponse(
+            save_virtual_workbook(wb), content_type="application/vnd.ms-excel"
+        )
+        response["Content-Disposition"] = f'attachment; filename="{filename}"'
+        return response
