@@ -50,6 +50,15 @@
 - Contents can have many people as director, cast or author. Like *get_author_list* field, we can receive list of any
   type of people of content.
 
+## API Documentation
+
+Postman API documentation is created and can be accessible by visiting public urls.
+
+- **Visit Online Documentation:** https://documenter.getpostman.com/view/11424728/UVsFxntV
+- **Send Requests Online:** https://www.postman.com/berkaymizrak/workspace/immfly-media-platform-project
+
+**Note:** Be sure you selected the environment *Immfly Environment*
+
 ## Exporting Channel Info
 
 There are 2 types of files and 2 ways to export channel info. (Channel title and average rating) 
