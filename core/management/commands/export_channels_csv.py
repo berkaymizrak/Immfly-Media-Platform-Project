@@ -23,10 +23,9 @@ class Command(BaseCommand):
         service = services.ExcelExportService(
             queryset=qs, serializer_class=serializer_class,
         )
-        csv_file = service.create_csv(False)
+        file_name = service.create_csv(False)
 
         self.stdout.write(self.style.SUCCESS(
-            '\nAll processes successfully finished and the exported file saved into \'media\' folder.'
+            '\nAll processes successfully finished and the exported file saved into \'media\' folder as \'%s\'.' % file_name
         ))
 
-        return csv_file

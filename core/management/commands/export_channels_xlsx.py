@@ -24,9 +24,9 @@ class Command(BaseCommand):
             queryset=qs, serializer_class=serializer_class,
         )
         wb = service.create_workbook()
-        filename = service.generate_file_name('xlsx')
-        save_workbook(wb, 'media/' + filename)
+        file_name = service.generate_file_name('xlsx')
+        save_workbook(wb, 'media/' + file_name)
 
         self.stdout.write(self.style.SUCCESS(
-            '\nAll processes successfully finished and the exported file saved into \'media\' folder.'
+            '\nAll processes successfully finished and the exported file saved into \'media\' folder as \'%s\'.' % file_name
         ))

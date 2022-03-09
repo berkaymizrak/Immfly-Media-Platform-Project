@@ -46,15 +46,17 @@ class ExcelExportService:
             for r in data:
                 r['get_rating'] = r['get_rating'] and float(r['get_rating'])
                 writer.writerow(list(r.values()))
+            return response
         else:
-            with open('media/%s' % self.generate_file_name('csv'), 'w') as f:
+            file_name = self.generate_file_name('csv')
+            with open('media/%s' % file_name, 'w') as f:
                 writer = csv.writer(f)
                 writer.writerow([str(header_mappings.get(h)[0]) for h in headers])
                 for r in data:
                     r['get_rating'] = r['get_rating'] and float(r['get_rating'])
                     writer.writerow(list(r.values()))
             f.close()
-        return f
+            return file_name
 
     def generate_file_name(self, extension):
         timestamp = timezone.localtime(timezone.now()).strftime("%Y%m%d_%H%M%S%f")
