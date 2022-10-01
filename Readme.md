@@ -55,7 +55,7 @@
 Postman API documentation is created and can be accessible by visiting public urls.
 
 - **Visit Online Documentation:** https://documenter.getpostman.com/view/11424728/UVsFxntV
-- **Send Requests Online:** https://www.postman.com/berkaymizrak/workspace/immfly-media-platform-project
+- **View Public Workspace:** https://www.postman.com/cloudy-meadow-858707/workspace/immfly-media-platform-project/collection/11424728-c6456fe1-6f6f-45db-b311-e19b11670014?action=share&creator=11424728
 
 **Note:** Be sure you selected the environment *Immfly Environment*
 
